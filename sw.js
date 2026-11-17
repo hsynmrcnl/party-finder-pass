@@ -1,5 +1,5 @@
-/* Parti Kurma servis işçisi — sürüm a216df87b110 (pwa-kur.js üretir; elle düzenleme) */
-const ONBELLEK = "parti-a216df87b110";
+/* Parti Kurma servis işçisi — sürüm 4fe96aa0ce4f (pwa-kur.js üretir; elle düzenleme) */
+const ONBELLEK = "parti-4fe96aa0ce4f";
 const AG_ONCE = ["./", "index.html", "kasa.json", "oyun.bin"];
 const DOSYALAR = AG_ONCE.concat(["manifest.webmanifest", "ikon-180.png", "ikon-192.png", "ikon-512.png", "ikon-maskable-512.png"]);
 self.addEventListener("install", e => { e.waitUntil(caches.open(ONBELLEK).then(c => c.addAll(DOSYALAR)).then(() => self.skipWaiting())); });
