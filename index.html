@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Parti Kurma</title>
 <link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#306230">
+<meta name="theme-color" content="#0c0a09">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Parti Kurma">
@@ -13,10 +13,10 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="apple-touch-icon" href="ikon-180.png">
 <link rel="icon" type="image/png" sizes="192x192" href="ikon-192.png">
-<style data-pwa>html,body{background:#306230}</style>
+<style data-pwa>html,body{background:#0c0a09}</style>
 <style>
-  /* 17 Kas: şifre ekranı da Game Boy (DMG tonları; oyunla aynı 60-30-10: sayfa orta, pencere en koyu, vurgu açık) */
-  :root{--bg:#306230; --panel:#0f380f; --kenar:#8bac0f; --ink:#d8f0b0; --dim:#9bbc0f; --altin:#9bbc0f; --altin-a:#d8f0b0; --kizil:#d8f0b0; --koyu:#041404}
+  /* 28 Kas: şifre ekranı oyunun KARANLIK FANTEZİ tokenlarıyla (--z0 zemin · --z2 pencere · --cizgi kenar · --metin yazı · --vurgu düğme · --kotu hata) — GB yeşili kalktı */
+  :root{--bg:#0c0a09; --panel:#2c2622; --kenar:#8c6d47; --ink:#f2e7d5; --dim:#cdb999; --altin:#e8a23c; --altin-a:#f2e7d5; --kizil:#ff7a68; --koyu:#1b1714}
   *{box-sizing:border-box}
   html,body{height:100%; margin:0; background:var(--bg); color:var(--ink); font:16px/1.4 ui-monospace,Menlo,Consolas,monospace;
     overscroll-behavior:none; -webkit-text-size-adjust:100%}
@@ -31,7 +31,7 @@
     box-shadow:inset 0 0 0 2px var(--kenar)}
   input:focus{outline:2px solid var(--altin); outline-offset:2px}
   button{font:inherit; font-size:16px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--koyu); background:var(--altin);
-    border:0; border-radius:0; min-height:44px; cursor:pointer; box-shadow:inset 0 -4px 0 #306230}
+    border:0; border-radius:0; min-height:44px; cursor:pointer; box-shadow:inset 0 -4px 0 #1b1714}
   button:disabled{opacity:.6}
   #msg{min-height:20px; margin:0; font-size:14px; color:var(--dim); text-align:center}
   #msg.hata{color:var(--kizil)}
@@ -48,7 +48,7 @@
   <button id="b" type="submit">Aç</button>
   <p id="msg" role="status"></p>
 </form>
-<p id="yuk" style="margin:0;color:#d8f0b0">Yükleniyor…</p>
+<p id="yuk" style="margin:0;color:#f2e7d5">Yükleniyor…</p>
 <script>
 (function(){
   var K="parti_pwa_anahtar", f=document.getElementById("f"), p=document.getElementById("p"), b=document.getElementById("b"),
